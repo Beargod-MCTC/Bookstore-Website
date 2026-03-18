@@ -1,0 +1,24 @@
+/* MAIN */
+
+/* NAV BAR */
+
+/*BOOK CARDS*/
+#featured-authors{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.book-image{
+    width: 150px;
+    height: 200px;
+    margin-right: 20px;
+}
+.book-description{
+    font-family: Garamond, serif;
+    text-wrap: wrap;
+}
+.book-card {
+    display: flex;
+    width: 200px;
+    text-wrap: nowrap;
+}
