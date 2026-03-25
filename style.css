@@ -45,6 +45,7 @@ body {
     margin-left: 0.5rem;
     animation-delay: 0.2s;
 }
+/* Page-turning animation for the book emojis not implimented yet*/
 @keyframes turnPages {
     0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
     25% { transform: translateY(-3px) rotate(-8deg) scaleX(1.05) scaleY(1.02); }
@@ -163,6 +164,38 @@ nav a:hover {
     transition: background 0.2s ease;
 }
 .book-card .add-book-to-cart:hover {
+    background: #1d1f33;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.cart-item span {
+    flex: 1;
+}
+.cart-item input {
+    width: 60px;
+    margin: 0 10px;
+}
+#total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+#checkout {
+    background: #2d2f45;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#checkout:hover {
     background: #1d1f33;
 }
 
